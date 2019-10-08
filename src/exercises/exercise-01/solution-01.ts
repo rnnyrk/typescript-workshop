@@ -9,4 +9,7 @@ export default () => {
   f = 40;
 
   const g: (string | number)[] = ['11', 21, '23', '77', 42, 55];
+
+  const h: () => void = () => {};
+  const i: (id: number) => number = (id) => { return id; };
 };

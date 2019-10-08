@@ -13,4 +13,6 @@ export default () => {
   f = 40;
 
   const g = ['11', 21, '23', '77', 42, 55];
+  const h = () => {};
+  const i = (id) => { return id; };
 };
