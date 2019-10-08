@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "sourceMap": true,
+    "pretty": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "module": "commonjs",
+    "target": "esnext",
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "exercises/*": ["src/exercises/*"],
+      "common/*": ["src/components/common/*"],
+      "modules/*": ["src/components/modules/*"],
+      "config/*": ["config/*"],
+      "config": ["config/index"],
+      "ducks/*": ["src/ducks/*"],
+      "ducks": ["src/ducks/index"],
+      "images/*": ["src/static/images/*"],
+      "server": ["server/index"],
+      "services/*": ["src/services/*"],
+      "store": ["src/store"],
+      "styles/*": ["src/styles/*"],
+      "styles": ["src/styles/index"],
+      "types": ["src/types/index"],
+      "vectors/*": ["src/static/vectors/*"],
+      "styled-components": ["src/services/styled-components"]
+    },
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017"],
+    "compilerOptions": {
+      "lib": [
+        "es2017"
+      ]
+    }
+  }
+}
