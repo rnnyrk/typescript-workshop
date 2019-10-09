@@ -3,8 +3,9 @@ export default () => {
    * ======================================================
    * TODO: This is an example from our Redux setup
    *
-   * 1. Pass UserState and PostState and as parameter to BaseState
+   * 1. Pass UserState and PostState as parameter to BaseState
    * 2. Overwrite data inside BaseState with the passed state
+   *
    * Tip: Look into TypeScript generics
    * ======================================================*/
   type BaseState<DataType> = {
@@ -23,13 +24,24 @@ export default () => {
     content: string;
   }>;
 
+  // Don't change the function
+  const myFunction = (user: UserState, post: PostState) => {
+    if (!user.loading) {
+      return user.data.name;
+    }
+
+    if (!post.loading) {
+      return post.data.title;
+    }
+  };
+
   /* 02
   * ======================================================
   * TODO: Extend ComponentProps with RouterProps
   * ======================================================*/
   type RouterProps = {
     history: {
-      push: () => void;
+      push: (route: string) => void;
     };
     match: {
       id: string;
@@ -39,4 +51,9 @@ export default () => {
   type ComponentProps = RouterProps & {
     title: string;
   }
+
+  // Don't change the function
+  const extendFunction = (props: ComponentProps) => {
+    props.history.push(props.match.id);
+  };
 };

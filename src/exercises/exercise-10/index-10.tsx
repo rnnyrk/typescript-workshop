@@ -3,11 +3,11 @@ import { action, ActionType } from 'typesafe-actions';
 export default () => {
   /*
   * ======================================================
-  * TODO: This is a (somewhat) basic duck file
-  * 1. Create a success action with typed parameters that passes payload
-  * 2. Create a failed action that passes an error string
-  * 3. Add user actions to ActionType (tip: Look into TypeScript typeof)
-  * 4. Add the missing actions in the reducer
+  * TODO: This is a (somewhat) our basic duck file
+  *
+  * 1. Update the actions with typed parameters that passes payload / error
+  * 2. Add user actions to ActionType (tip: Look into TypeScript typeof)
+  * 3. Add the missing actions in the reducer
   * ======================================================*/
   type BaseState<DataType> = {
     loading: boolean;
@@ -27,12 +27,14 @@ export default () => {
     },
   };
 
+  // 1. Update the actions with typed parameters that passes payload / error
   const userActions = {
     getUser: () => action('user/GET'),
     getUserSuccess: () => { },
     getUserFailed: () => { },
   };
 
+  // 2. Add user actions to ActionType(tip: Look into TypeScript typeof)
   const reducer = (state = initalState, action: ActionType<>) => {
     switch (action.type) {
       case 'user/GET':
@@ -40,6 +42,7 @@ export default () => {
           ...state,
           loading: true,
         };
+      // 3. Add the missing actions in the reducer
       default:
         return state;
     }

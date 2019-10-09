@@ -3,7 +3,8 @@ import { action, ActionType } from 'typesafe-actions';
 export default () => {
   /*
   * ======================================================
-  * TODO: This is a (somewhat) basic duck file
+  * TODO: This is a (somewhat) our basic duck file
+  *
   * 1. Create a success action with typed parameters that passes payload
   * 2. Create a failed action that passes an error string
   * 3. Add user actions to ActionType (tip: Look into TypeScript typeof)

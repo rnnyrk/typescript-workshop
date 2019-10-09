@@ -4,8 +4,8 @@ export default () => {
   /*
    * ======================================================
    * TODO:
-   * 1. Create a UserState with name and email
-   * 2. Create a ReduxState and add the UserState to it
+   * 1. Create a UserState type with name and email
+   * 2. Create a ReduxState type and add the UserState
    * 3. Map the data from UserState to mapStateToProps
    * 4. Map the data from UserState to useSelector
    *
