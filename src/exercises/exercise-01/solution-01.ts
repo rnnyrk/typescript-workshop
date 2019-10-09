@@ -1,4 +1,8 @@
 export default () => {
+  /*
+  * ======================================================
+  * TODO: Type the variables
+  * ======================================================*/
   const a: number = 1;
   const b: string = 'Hello';
   const c: boolean = false;

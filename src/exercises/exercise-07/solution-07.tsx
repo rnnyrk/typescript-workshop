@@ -1,88 +1,46 @@
-/*
+/* 01
  * ======================================================
  * TODO:
- * 1. Extend your own props with RouteComponentProps
- * 2. Set the default value of SmallText color to black
- * 3. Set the types for useState() and openDishModal()
- * 4. Set HTML type for useRef() and fix null error in useEffect()
+ * 1. Replace propTypes with TypeScript
+ * 2. Vervang de onClick met de onClick functie uit `types/index.ts`
+ * Tip: Look into typing with React.FC<>
  * ======================================================*/
-import React, { useState, useRef, useEffect } from 'react';
-import { withRouter, RouteComponentProps } from 'react-router-dom';
-import styled from 'styled-components';
+import React from 'react';
+import * as i from 'types';
+import styled, { css } from 'styled-components';
 
-import bodyScrollLock from 'services/bodyScrollLock';
+const Exercise07: React.FC<Exercise07Props> = ({ title, image = undefined, onClick }) => (
+  <ContainerEl image={image}>
+    <h1>{title}</h1>
+    {onClick && (
+      <button onClick={onClick}>
+        Click me!
+      </button>
+    )}
+  </ContainerEl>
+);
 
-const Modal = styled.div`
-  position: absolute;
-  width: 500px;
-  height: 500px;
-`;
-
-const List = styled.div`
-  width: 100%;
-  display: flex;
-`;
-
-const ListItem = styled.span`
-  font-size: 16px;
-`;
-
-const SmallText = styled.span<SmallTextProps>`
-  font-size: 12px;
-  color: ${({ theme, color }) => theme.colors[color || 'black']};
-`;
-
-type SmallTextProps = {
-  color?: 'black' | 'prime';
+type Exercise07Props = {
+  title: string;
+  image?: string;
+  onClick?: i.OnClick<HTMLButtonElement>;
 }
 
-const Exercise07: React.FC<Exercise07Props> = ({ dishes, history }) => {
-  const [currentDish, setCurrentDish] = useState<DishProps>();
-  const [open, setOpen] = useState<boolean>(false);
-  const modalRef = useRef<HTMLDivElement>(null);
+/* 02
+ * ======================================================
+ * TODO: Type this styled-component
+ * ======================================================*/
+const ContainerEl = styled.div<ContainerElProps>`
+  width: 100%;
+  height: 300px;
 
-  useEffect(() => {
-    if (modalRef.current) {
-      bodyScrollLock(modalRef.current);
-    }
-  }, [open]);
+  ${({ image }) => image && css`
+    background-image: url(${image});
+  `};
+`;
 
-  const openDishModal = (dish: DishProps) => {
-    setOpen(true);
-    setCurrentDish(dish);
-  };
+type ContainerElProps = {
+  image?: string;
+}
 
-  return (
-    <>
-      {open && currentDish && (
-        <Modal ref={modalRef}>
-          <h2>{currentDish.title}</h2>
-          <button onClick={() => history.push(currentDish.slug)}>
-            Create recipe for this dish
-          </button>
-        </Modal>
-      )}
-
-      <List>
-        {dishes.map((dish) => (
-          <ListItem onClick={() => openDishModal(dish)}>
-            {dish.title}
-          </ListItem>
-        ))}
-      </List>
-
-      <SmallText>Select your favorite dish to create a recipe</SmallText>
-    </>
-  );
-};
-
-type DishProps = {
-  slug: string;
-  title: string;
-};
-
-type Exercise07Props = RouteComponentProps & {
-  dishes: DishProps[];
-};
-
-export default withRouter(Exercise07);
+export default Exercise07;

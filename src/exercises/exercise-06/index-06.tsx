@@ -1,46 +1,26 @@
-/* 01
- * ======================================================
- * TODO:
- * 1. Replace propTypes with TypeScript
- * 2. Vervang de onClick met de onClick functie uit `types/index.ts`
- * Tip: Look into typing with React.FC<>
- * ======================================================*/
-import React from 'react';
-import PT from 'prop-types';
-import styled, { css } from 'styled-components';
+export default () => {
+  /*
+   * ======================================================
+   * TODO: This is an example from our Redux setup
+   *
+   * 1. Pass UserState and PostState and as parameter to BaseState
+   * 2. Overwrite data inside BaseState with the passed state
+   * Tip: Look into TypeScript generics
+   * ======================================================*/
 
-const Exercise06 = ({ title, image, onClick }) => (
-  <ContainerEl image={image}>
-    <h1>{title}</h1>
-    {onClick && (
-      <button onClick={onClick}>
-        Click me!
-      </button>
-    )}
-  </ContainerEl>
-);
+  type BaseState = {
+    loading: boolean;
+    error: string;
+    data: {};
+  };
 
-Exercise06.propTypes = {
-  title: PT.string.isRequired,
-  image: PT.string,
-  onClick: PT.func,
+  type UserState = {
+    name: string;
+    age: number;
+  }
+
+  type PostState = {
+    title: string;
+    content: string;
+  }
 };
-
-/* 02
- * ======================================================
- * TODO: .... @TODO
- * ======================================================*/
-const ContainerEl = styled.div`
-  width: 100%;
-  height: 300px;
-
-  ${({ image }) => image && css`
-    background-image: url(${image});
-  `};
-`;
-
-ContainerEl.propTypes = {
-  image: PT.string,
-};
-
-export default Exercise06;
