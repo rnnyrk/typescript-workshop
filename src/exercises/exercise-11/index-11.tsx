@@ -1,3 +1,4 @@
+// Ignore this first part (helper functions)
 import { ThunkAction as IThunkAction } from 'redux-thunk';
 import { action, ActionType } from 'typesafe-actions';
 
@@ -7,6 +8,10 @@ type Action<P = any> = {
   error?: boolean;
   meta?: any;
 };
+
+type ReduxState = {
+  user: {};
+}
 
 // React components only care about the "first function" of a thunk
 // Redux uses the "second function" of a thunk
@@ -20,19 +25,15 @@ const userActions = {
   getUserFailed: (error: string) => action('user/GET_FAILED', error),
 };
 
-type ReduxState = {
-  user: {};
-}
-
 /*
 * ======================================================
 * TODO: Above are some helper functions, you can try to
 * understand how those work, or ignore and just use them
 *
-* 1. Type the "first function", with id parameter and
+* 1. Type the "first function", with id parameter, and
      return type on the BaseThunkAction helper
      (Tip: We've typed this function before)
-  2. Dispatch the error and success functions
+  2. Dispatch the error and success functions from userActions
 * ======================================================*/
 
 type GetUserAction = BaseThunkAction<>;
