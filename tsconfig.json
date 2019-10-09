@@ -23,7 +23,6 @@
       "images/*": ["src/static/images/*"],
       "server": ["server/index"],
       "services/*": ["src/services/*"],
-      "store": ["src/store"],
       "styles/*": ["src/styles/*"],
       "styles": ["src/styles/index"],
       "types": ["src/types/index"],
