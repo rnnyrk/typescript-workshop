@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "sourceMap": true,
+    "pretty": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "module": "commonjs",
+    "target": "esnext",
+    "jsx": "react",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017"]
+  }
+}

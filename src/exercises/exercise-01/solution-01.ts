@@ -1,19 +1,83 @@
-export default () => {
+function Test01() {
   /*
   * ======================================================
-  * TODO: Type the variables
+  * TODO: Type these basic variables
+  * - Add type AND value
   * ======================================================*/
-  const a: number = 1;
-  const b: string = 'Hello';
-  const c: boolean = false;
-  const d: string[] = ['Amsterdam', 'Rotterdam'];
-  const e: { name: string } = { name: 'Label A' };
 
-  let f: string | number = 'fulltime';
-  f = 40;
+  // number
+  let a: number = 1;
 
-  const g: (string | number)[] = ['11', 21, '23', '77', 42, 55];
+  // string
+  let b: string = 'Sander';
 
-  const h: () => void = () => {};
-  const i: (id: number) => number = (id) => { return id; };
+  // boolean
+  let c: boolean = false;
+
+  // Array of string
+  let d: string[] = ['a'];
+
+  // Object with property 'name' and value of type string
+  let e: { name: string } = { name: 'Sander' };
+
+  // string OR number
+  let f: string | number = 'a';
+  f;
+
+
+
+  /*
+  * ======================================================
+  * TODO: Type these advanced variables
+  * ======================================================*/
+
+  // Array of string OR number
+  let g: (string | number)[] = ['a', 1];
+
+  // Function that returns void
+  let h: () => void = () => {};
+
+  // Function with a single parameter of type number
+  // Returns number
+  let i: (id: number) => number = (id) => id;
+
+
+
+  /*
+  * ======================================================
+  * Type inference
+  * TODO: Add the correct values to the variables
+  * - Do NOT add types
+  * ======================================================*/
+
+  // number
+  let j = 1;
+
+  // string
+  let k = 'a';
+
+  // boolean
+  let l = true;
+
+  // Array of string
+  let m = ['1'];
+
+  // Object with property 'name' and value of type string
+  let n = { name: 'a' };
+
+  // string OR number
+  let o = 1 || 'a';
+
+
+
+
+
+
+  /*
+  * ======================================================
+  * Do not touch this
+  * ======================================================*/
+  return { a, b, c, d, e, f, g, h, i, j, k, l, m, n, o };
 };
+
+export default Test01();
