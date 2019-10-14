@@ -1,12 +1,13 @@
-export default () => {
+function exercise04(isUuid: boolean) {
   /* 01
   * ======================================================
   * TODO: Fix the typing error by adjusting type ID
   * ======================================================*/
   type ID = number;
 
-  let id: ID = 1;
-  id = 'a3b21';
+  let id: ID = isUuid ? 'a3b21' : 1;
+
+
 
   /* 02
   * ======================================================
@@ -39,13 +40,14 @@ export default () => {
     ],
   };
 
-  /* 03
+
+
+
+  /*
   * ======================================================
-  * TODO: Fix the typing error by adjusting type ColorProps
+  * Do not touch this
   * ======================================================*/
-  type ColorProps = 'white';
-  let color: ColorProps = 'white';
-  color = 'red';
-  color = 'blue';
-  color = 'yellow';
+ return { id, company };
 };
+
+export default exercise04(true);

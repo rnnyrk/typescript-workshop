@@ -1,7 +1,5 @@
-
-import React from 'react';
 import { assert, IsExact } from "conditional-type-checks";
-import { exercise0301, exercise0302, Person, Company } from './solution-03';
+import { exercise0301, exercise0302, Person, Company } from './index-03';
 
 // 1.
 // Check Person type

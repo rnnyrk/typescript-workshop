@@ -1,11 +1,18 @@
-export default () => {
-  // 01 - Create ID type with number and string possibility
+function exercise04(isUuid: boolean) {
+  /* 01
+  * ======================================================
+  * TODO: Fix the typing error by adjusting type ID
+  * ======================================================*/
   type ID = number | string;
 
-  let id: ID = 1;
-  id = 'a3b21';
+  let id: ID = isUuid ? 'a3b21' : 1;
 
-  // 02 - Make interests optional
+
+
+  /* 02
+  * ======================================================
+  * TODO: Fix the typing error by adjusting type CompanyProps
+  * ======================================================*/
   type CompanyProps = {
     name: string;
     employees: {
@@ -33,10 +40,15 @@ export default () => {
     ],
   };
 
-  // 03 - Add oneOf type to ColorProps
-  type ColorProps = 'white' | 'red' | 'blue' | 'yellow';
-  let color: ColorProps = 'white';
-  color = 'red';
-  color = 'blue';
-  color = 'yellow';
+
+
+
+
+  /*
+  * ======================================================
+  * Do not touch this
+  * ======================================================*/
+ return { id, company };
 };
+
+export default exercise04(true);
