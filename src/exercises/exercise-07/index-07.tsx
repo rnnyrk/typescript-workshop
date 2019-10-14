@@ -1,15 +1,24 @@
+/*
+ * ======================================================
+ * Don't touch this
+ * ======================================================*/
+type OnClick<Element, ReturnType = void> = (event: React.MouseEvent<Element, MouseEvent>) => ReturnType;
+
+
+
 /* 01
  * ======================================================
  * TODO:
  * 1. Replace propTypes with TypeScript
- * 2. Vervang de onClick met de onClick functie uit `types/index.ts`
+ * 2. Replace 'onClick' with the 'OnClick' type provided above
+ *
  * Tip: Look into typing for React.FC<>
  * ======================================================*/
 import React from 'react';
 import PT from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled, { css } from '../../services/styled-components';
 
-const Exercise07 = ({ title, image, onClick }) => (
+export const Exercise07 = ({ title, image, onClick }) => (
   <ContainerEl image={image}>
     <h1>{title}</h1>
     {onClick && (
@@ -30,7 +39,7 @@ Exercise07.propTypes = {
  * ======================================================
  * TODO: Type this styled-component
  * ======================================================*/
-const ContainerEl = styled.div`
+export const ContainerEl = styled.div`
   width: 100%;
   height: 300px;
 
@@ -42,5 +51,3 @@ const ContainerEl = styled.div`
 ContainerEl.propTypes = {
   image: PT.string,
 };
-
-export default Exercise07;

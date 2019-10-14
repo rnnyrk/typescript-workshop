@@ -1,15 +1,23 @@
+/*
+ * ======================================================
+ * Don't touch this
+ * ======================================================*/
+type OnClick<Element, ReturnType = void> = (event: React.MouseEvent<Element, MouseEvent>) => ReturnType;
+
+
+
 /* 01
  * ======================================================
  * TODO:
  * 1. Replace propTypes with TypeScript
- * 2. Vervang de onClick met de onClick functie uit `types/index.ts`
- * Tip: Look into typing with React.FC<>
+ * 2. Replace 'onClick' with the 'OnClick' type provided above
+ *
+ * Tip: Look into typing for React.FC<>
  * ======================================================*/
 import React from 'react';
-import * as i from 'types';
-import styled, { css } from 'styled-components';
+import styled, { css } from '../../services/styled-components';
 
-const Exercise07: React.FC<Exercise07Props> = ({ title, image = undefined, onClick }) => (
+export const Exercise07: React.FC<Exercise07Props> = ({ title, image, onClick }) => (
   <ContainerEl image={image}>
     <h1>{title}</h1>
     {onClick && (
@@ -23,14 +31,14 @@ const Exercise07: React.FC<Exercise07Props> = ({ title, image = undefined, onCli
 type Exercise07Props = {
   title: string;
   image?: string;
-  onClick?: i.OnClick<HTMLButtonElement>;
+  onClick?: OnClick<HTMLButtonElement>;
 }
 
 /* 02
  * ======================================================
  * TODO: Type this styled-component
  * ======================================================*/
-const ContainerEl = styled.div<ContainerElProps>`
+export const ContainerEl = styled.div<ContainerElProps>`
   width: 100%;
   height: 300px;
 
@@ -42,5 +50,3 @@ const ContainerEl = styled.div<ContainerElProps>`
 type ContainerElProps = {
   image?: string;
 }
-
-export default Exercise07;
