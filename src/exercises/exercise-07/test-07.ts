@@ -1,5 +1,5 @@
 import React from 'react';
-import { assert, IsExact, IsAny } from "conditional-type-checks";
+import { assert, IsExact } from "conditional-type-checks";
 import { Exercise07, ContainerEl } from './index-07';
 import { StyledComponent } from 'styled-components';
 

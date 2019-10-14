@@ -1,4 +1,12 @@
-export default () => {
+/* 01
+ * ======================================================
+ * TODO:
+ * - Type the 'person' object from exercise0301
+ * - Add type to 'person' in exercise0301
+ * ======================================================*/
+export type Person = {};
+
+export function exercise0301() {
   /* 01
   * ======================================================
   * TODO: Type the person object
@@ -10,10 +18,28 @@ export default () => {
     interests: ['React', 'Styled Components', 'React Native'],
   };
 
-  /* 02
+
+
+
+  /*
   * ======================================================
-  * TODO: Type company and reuse the person type for employees
+  * Do not touch this
   * ======================================================*/
+  return { person };
+}
+
+
+
+/* 02
+ * ======================================================
+ * TODO:
+ * - Type the 'company' object in exercise0302
+ * - Reuse the 'person' type from exercise0301
+ * - Add type to 'company' in exercise0302
+ * ======================================================*/
+export type Company = {};
+
+export function exercise0302() {
   const company = {
     name: 'Label A',
     employees: [
@@ -31,4 +57,13 @@ export default () => {
       },
     ],
   };
+
+
+
+
+  /*
+  * ======================================================
+  * Do not touch this
+  * ======================================================*/
+  return { company };
 };
