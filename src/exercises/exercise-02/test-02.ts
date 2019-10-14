@@ -1,6 +1,13 @@
 import { expectType } from 'tsd';
 import Test from './index-02';
 
-type Solution = { name: string };
+expectType<Test02.company>(Test.solution);
 
-expectType<Solution>(Test.solution);
+
+
+
+
+
+module Test02 {
+  export type company = { name: string };
+}

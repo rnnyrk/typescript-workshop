@@ -2,7 +2,7 @@
  * ======================================================
  * TODO: Type the parameters and return type of this function
  * ======================================================*/
-const Exercise0501 = (multiply = 2) => {
+const Exercise0501 = (multiply) => {
   const count = 2;
   return count + multiply;
 };
@@ -32,7 +32,7 @@ const Exercise0502 = ({
   };
 };
 
-export default {
+export {
   Exercise0501,
   Exercise0502,
 };

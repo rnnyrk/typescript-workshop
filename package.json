@@ -11,7 +11,8 @@
   "scripts": {
     "tsc": "tsc",
     "test-1": "tsc -p src/exercises/exercise-01/tsconfig.json --watch",
-    "test-2": "tsc -p src/exercises/exercise-02/tsconfig.json --watch"
+    "test-2": "tsc -p src/exercises/exercise-02/tsconfig.json --watch",
+    "test-5": "tsc -p src/exercises/exercise-05/tsconfig.json --watch"
   },
   "keywords": [],
   "browserslist": {
