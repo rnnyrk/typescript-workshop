@@ -1,4 +1,4 @@
-function Test01() {
+function test01() {
   /*
   * ======================================================
   * TODO: Type these basic variables
@@ -79,4 +79,4 @@ function Test01() {
   return { a, b, c, d, e, f, g, h, i, j, k, l, m, n, o };
 };
 
-export default Test01();
+export default test01();
