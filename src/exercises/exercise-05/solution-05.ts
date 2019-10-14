@@ -2,7 +2,7 @@
  * ======================================================
  * TODO: Type the parameters and return type of this function
  * ======================================================*/
-const Exercise0501 = (multiply: number = 2): ReturnType => {
+const Exercise0501 = (multiply: number): ReturnType => {
   const count: number = 2;
   return count * multiply;
 };
@@ -49,7 +49,7 @@ type ReturnPersonProps = {
   developerType: 'frontend' | 'backend';
 }
 
-export default {
+export {
   Exercise0501,
   Exercise0502,
 };

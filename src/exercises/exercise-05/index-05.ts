@@ -11,9 +11,7 @@ const Exercise0501 = (multiply) => {
  * ======================================================
  * TODO: Return an object based on the parameters and const
  * ======================================================*/
-const Exercise0502 = ({
-  firstName, lastName, age, city, interests,
-}) => {
+const Exercise0502 = ({ firstName, lastName, age, city, interests }) => {
   const name = `${firstName} ${lastName}`;
   const isAdult = age > 18;
 
