@@ -16,7 +16,8 @@
     "test-4": "npm run test -- -p src/exercises/exercise-04/tsconfig.json",
     "test-5": "npm run test -- -p src/exercises/exercise-05/tsconfig.json",
     "test-6": "npm run test -- -p src/exercises/exercise-06/tsconfig.json",
-    "test-7": "npm run test -- -p src/exercises/exercise-07/tsconfig.json"
+    "test-7": "npm run test -- -p src/exercises/exercise-07/tsconfig.json",
+    "test-9": "npm run test -- -p src/exercises/exercise-09/tsconfig.json"
   },
   "keywords": [],
   "browserslist": {

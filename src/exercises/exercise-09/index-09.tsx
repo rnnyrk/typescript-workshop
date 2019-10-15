@@ -1,27 +1,58 @@
+/*
+ * ======================================================
+ * Exercise 9
+ * Typing Redux
+ *
+ * TO RUN TEST
+ * npm run test-9
+ * ======================================================*/
+
+
+
 import { useSelector } from 'react-redux';
 
-export default () => {
+
+/*
+ * ======================================================
+ * TODO:
+ * 1. Create a UserState type with name and email
+ * 2. Create a ReduxState type and add the UserState
+ * 3. Get the data from UserState with mapStateToProps as 'user'
+ * 4. Get the data from UserState with useSelector
+ * ======================================================*/
+export type BaseState<DataType> = {
+  loading: boolean;
+  error: string;
+  data: DataType;
+};
+
+// 1. Create a UserState type with name (string) and email (string)
+// Note: use BaseState
+export type UserState = {}
+
+// 2. Create a ReduxState type and add the UserState
+export type ReduxState = {}
+
+
+function exercise09() {
+  // 3. Get 'loading' from UserState with mapStateToProps as 'loading'
+  // Note: type the parameter correctly
+  const mapStateToProps = () => ({});
+
+  // 4. Get the email from UserState with useSelector
+  // Note: type the parameter correctly
+  const email = useSelector(() => {});
+
+
+
+
+
+
   /*
    * ======================================================
-   * TODO:
-   * 1. Create a UserState type with name and email
-   * 2. Create a ReduxState type and add the UserState
-   * 3. Map the data from UserState to mapStateToProps
-   * 4. Map the data from UserState to useSelector
-   *
-   * Refer state to the ReduxState with 3 and 4
+   * Do not touch this
    * ======================================================*/
-  type BaseState<DataType> = {
-    loading: boolean;
-    error: string;
-    data: DataType;
-  };
-
-  // ..
-
-  const mapStateToProps = (state) => ({
-    name: state,
-  });
-
-  const name = useSelector((state) => state);
+  return { mapStateToProps, email };
 };
+
+export default exercise09();
