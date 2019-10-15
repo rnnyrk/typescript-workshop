@@ -13,8 +13,8 @@ function Test02() {
   /*
    * ======================================================
    * TODO:
-   * 1. Extract the type we added to 'company' to a type variable.
-   * 2. Add the created type and the correct value to 'solution'.
+   * 1. Copy the type we added to 'company' to a seperate type variable.
+   * 2. Add the created type to 'solution' and add the correct value.
    * ======================================================*/
 
   const company: { name: string } = { name: 'Label A' };
