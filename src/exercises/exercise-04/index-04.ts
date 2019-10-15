@@ -9,23 +9,24 @@
 
 
 
+/* 1.
+ * ======================================================
+ * TODO:
+ * - Fix the typing error by fixing the 'ID' type.
+ * ======================================================*/
+
 function exercise04(isUuid: boolean) {
-  /* 01
-  * ======================================================
-  * TODO:
-  * - Fix the typing error by adjusting type ID
-  * ======================================================*/
   type ID = number;
 
   let id: ID = isUuid ? 'a3b21' : 1;
 
 
 
-  /* 02
-  * ======================================================
-  * TODO:
-  * - Fix the typing error by adjusting type CompanyProps
-  * ======================================================*/
+  /* 2.
+   * ======================================================
+   * TODO:
+   * - Fix the typing error by fixing the 'CompanyProps' type.
+   * ======================================================*/
   type CompanyProps = {
     name: string;
     employees: {

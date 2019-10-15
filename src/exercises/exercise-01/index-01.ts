@@ -1,21 +1,21 @@
 /*
-  * ======================================================
-  * Exercise 1
-  * Adding types to variables
-  *
-  * TO RUN TEST
-  * npm run test-1
-  * ======================================================*/
+ * ======================================================
+ * Exercise 1
+ * Adding types to variables
+ *
+ * TO RUN TEST
+ * npm run test-1
+ * ======================================================*/
 
 
 
 function test01() {
-  /*
-  * ======================================================
-  * TODO:
-  * - Type these basic variables
-  * - Add type AND value
-  * ======================================================*/
+  /* 1. Basic types
+   * ======================================================
+   * TODO:
+   * 1. Type all the variables with the the correct type (stated above the variables).
+   * 2. Give the variables a correct value.
+   * ======================================================*/
 
   // number
   let a;
@@ -37,9 +37,10 @@ function test01() {
 
 
 
-  /*
+  /* 2. Advanced types
   * ======================================================
-  * TODO: Type these advanced variables
+  * TODO:
+  * - Type all the variables
   * ======================================================*/
 
   // Array of string OR number
@@ -54,12 +55,11 @@ function test01() {
 
 
 
-  /*
-  * ======================================================
-  * Type inference
-  * TODO: Add the correct values to the variables
-  * - Do NOT add types
-  * ======================================================*/
+  /* Type Inference
+   * ======================================================
+   * TODO:
+   * - Add the correct value to these variables (without types).
+   * ======================================================*/
 
   // number
   let j;
@@ -78,6 +78,8 @@ function test01() {
 
   // string OR number
   let o;
+
+
 
 
 

@@ -9,23 +9,23 @@
 
 
 
-
 /*
  * ======================================================
- * Don't touch this
+ * Don't touch this (do use it, though)
  * ======================================================*/
 type OnClick<Element, ReturnType = void> = (event: React.MouseEvent<Element, MouseEvent>) => ReturnType;
 
 
 
-/* 01
+/* 1.
  * ======================================================
  * TODO:
- * 1. Replace propTypes with TypeScript
- * 2. Replace 'onClick' with the 'OnClick' type provided above
+ * 1. Replace propTypes with TypeScript.
+ * 2. Replace 'onClick' with the 'OnClick' type provided above.
  *
- * Tip: Look into typing for React.FC<>
+ * Tip: Look into typing for React.FC<>.
  * ======================================================*/
+
 import React from 'react';
 import PT from 'prop-types';
 import styled, { css } from '../../services/styled-components';
@@ -47,10 +47,16 @@ Exercise07.propTypes = {
   onClick: PT.func,
 };
 
-/* 02
+
+
+/* 2.
  * ======================================================
- * TODO: Type this styled-component
+ * TODO:
+ * - Type this styled-component.
+ *
+ * Tip: Use generics.
  * ======================================================*/
+
 export const ContainerEl = styled.div`
   width: 100%;
   height: 300px;

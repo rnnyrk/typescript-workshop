@@ -14,13 +14,15 @@ import { action, ActionType } from 'typesafe-actions';
 
 /*
 * ======================================================
-* TODO: This is a simplified version of our basic duck file
-*
-* 1. Update the actions with typed parameters that passes payload / error
-* 2. Add a return type to reducer so it can never return anything else than UserState
-* 3. Add user actions to ActionType (tip: Look into TypeScript 'typeof')
-* 4. Add the missing actions in the reducer
+* TODO:
+* 1. Update the actions with typed parameters that passes 'payload' and 'error'.
+* 2. Add a return type to 'reducer' so it can never return anything else than 'UserState'.
+* 3. Add user actions to 'ActionType' (tip: Look into TypeScript 'typeof').
+* 4. Add the missing actions in the 'reducer'.
 * ======================================================*/
+
+
+
 export type BaseState<DataType> = {
   loading: boolean;
   error?: string;

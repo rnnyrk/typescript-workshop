@@ -7,19 +7,21 @@
  * npm run test-9
  * ======================================================*/
 
-
-
 import { useSelector } from 'react-redux';
+
 
 
 /*
  * ======================================================
  * TODO:
- * 1. Create a UserState type with name and email
- * 2. Create a ReduxState type and add the UserState
- * 3. Get the data from UserState with mapStateToProps as 'user'
- * 4. Get the data from UserState with useSelector
+ * 1. Create a 'UserState' type with 'name' and 'email' properties.
+ * 2. Create a 'ReduxState' type and add the 'UserState' as 'user'.
+ * 3. Get the data from 'UserState' with mapStateToProps as 'user'.
+ * 4. Get the data from 'UserState' with useSelector.
  * ======================================================*/
+
+
+
 export type BaseState<DataType> = {
   loading: boolean;
   error: string;
@@ -42,6 +44,12 @@ function exercise09() {
   // 4. Get the email from UserState with useSelector
   // Note: type the parameter correctly
   const email = useSelector(() => {});
+
+
+
+
+
+
 
 
 

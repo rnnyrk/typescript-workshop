@@ -4,19 +4,19 @@
  * Extending prop types and typing hooks
  *
  * THIS DOES NOT NEED A TEST TO RUN
+ * If you no longer see errors it should be good (if not sure, ask Ronny or Sander)
  * ======================================================*/
-
 
 
 
 /*
  * ======================================================
  * TODO:
- * 1. Extend the component's props type with RouteComponentProps
- * 2. Set the default value of SmallText color to black
- * 3. Set the types for useState() and openDishModal() using generics
- * 4. Set HTML type for useRef()
- * 5. Fix null error in useEffect()
+ * 1. Extend the component's props type with 'RouteComponentProps'.
+ * 2. Set the default value of 'SmallText' color to 'black'.
+ * 3. Set the types for 'useState' and 'openDishModal' using generics.
+ * 4. Set HTML type for 'useRef'.
+ * 5. Fix null error in 'useEffect'.
  * ======================================================*/
 
 import React, { useEffect, useState, useRef } from 'react';
