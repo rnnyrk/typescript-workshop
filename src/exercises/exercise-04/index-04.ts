@@ -1,31 +1,33 @@
 /*
-  * ======================================================
-  * Exercise 4
-  * Reading errors
-  *
-  * TO RUN TEST
-  * npm run test-4
-  * ======================================================*/
+ * ======================================================
+ * Exercise 4
+ * Reading errors
+ *
+ * TO RUN TEST
+ * npm run test-4
+ * ======================================================*/
 
 
+
+/* 1.
+ * ======================================================
+ * TODO:
+ * 1. Mouse over the error to see what is going wrong.
+ * 2. Fix the typing error by fixing the 'ID' type.
+ * ======================================================*/
 
 function exercise04(isUuid: boolean) {
-  /* 01
-  * ======================================================
-  * TODO:
-  * - Fix the typing error by adjusting type ID
-  * ======================================================*/
   type ID = number;
 
   let id: ID = isUuid ? 'a3b21' : 1;
 
 
 
-  /* 02
-  * ======================================================
-  * TODO:
-  * - Fix the typing error by adjusting type CompanyProps
-  * ======================================================*/
+  /* 2.
+   * ======================================================
+   * TODO:
+   * - Fix the typing error by fixing the 'CompanyProps' type.
+   * ======================================================*/
   type CompanyProps = {
     name: string;
     employees: {

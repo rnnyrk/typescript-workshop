@@ -9,19 +9,25 @@
 
 
 
-/* 01
+/* 1.
  * ======================================================
- * TODO: Type the parameters and return type of this function
+ * TODO:
+ * - Type the parameters and return type of this function
  * ======================================================*/
+
 const Exercise0501 = (multiply) => {
   const count = 2;
   return count + multiply;
 };
 
-/* 02
+
+
+/* 2.
  * ======================================================
- * TODO: Return an object based on the parameters and const
+ * TODO:
+ * - Return an object based on the parameters and const
  * ======================================================*/
+
 const Exercise0502 = ({ firstName, lastName, age, city, interests }) => {
   const name = `${firstName} ${lastName}`;
   const isAdult = age > 18;
@@ -41,7 +47,25 @@ const Exercise0502 = ({ firstName, lastName, age, city, interests }) => {
   };
 };
 
-export {
-  Exercise0501,
-  Exercise0502,
-};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * ======================================================
+ * Do not touch this
+ * ======================================================*/
+export { Exercise0501, Exercise0502 };

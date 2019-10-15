@@ -4,25 +4,35 @@
  * Extending prop types and typing hooks
  *
  * THIS DOES NOT NEED A TEST TO RUN
+ * If you no longer see errors it should be good (if not sure, ask Ronny or Sander)
  * ======================================================*/
-
 
 
 
 /*
  * ======================================================
  * TODO:
- * 1. Extend the component's props type with RouteComponentProps
- * 2. Set the default value of SmallText color to black
- * 3. Set the types for useState() and openDishModal() using generics
- * 4. Set HTML type for useRef()
- * 5. Fix null error in useEffect()
+ * 1. Extend the component's props type with 'RouteComponentProps'.
+ * 2. Set the default value of 'SmallText' color to 'black'.
+ * 3. Set the types for 'useState' and 'openDishModal' using generics.
+ * 4. Set HTML type for 'useRef'.
+ * 5. Fix null error in 'useEffect'.
  * ======================================================*/
 
 import React, { useEffect, useState, useRef } from 'react';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
-import styled from 'styled-components';
 
+/* FUN FACT
+ * ======================================================
+ * You can see the TypeScript definitions of packages by ALT/CMD + CLICK on the package name.
+ * Try it on line 23.
+ *
+ * This is very useful to use as a sort of documentation and will help you find types that packages
+ * provide themselves so you don't have to write certain types yourself (that may be incorrect).
+ * An example is the 'RouteComponentProps' that react-router-dom provides for us.
+ * ======================================================*/
+
+import styled from '../../services/styled-components';
 import bodyScrollLock from './bodyScrollLock';
 
 
@@ -45,7 +55,7 @@ const ListItem = styled.span`
 
 const SmallText = styled.span<SmallTextProps>`
   font-size: 12px;
-  color: ${({ theme, color }) => theme.colors[color]};
+  color: ${(props) => props.theme.color[props.color]};
 `;
 
 type SmallTextProps = {
@@ -104,3 +114,16 @@ type Exercise08Props = {
 };
 
 export default withRouter(Exercise08);
+
+
+
+
+
+
+
+
+/* BONUS
+ * ======================================================
+ * Try and remove some of the explicitly written types on the hooks and see if TypeScript is able
+ * to infer the correct type.
+ * ======================================================*/

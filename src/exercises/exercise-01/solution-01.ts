@@ -1,10 +1,4 @@
 function Test01() {
-  /*
-  * ======================================================
-  * TODO: Type these basic variables
-  * - Add type AND value
-  * ======================================================*/
-
   // number
   let a: number = 1;
 
@@ -26,11 +20,6 @@ function Test01() {
 
 
 
-  /*
-  * ======================================================
-  * TODO: Type these advanced variables
-  * ======================================================*/
-
   // Array of string OR number
   let g: (string | number)[] = ['a', 1];
 
@@ -42,13 +31,6 @@ function Test01() {
   let i: (id: number) => number = (id) => id;
 
 
-
-  /*
-  * ======================================================
-  * Type inference
-  * TODO: Add the correct values to the variables
-  * - Do NOT add types
-  * ======================================================*/
 
   // number
   let j = 1;

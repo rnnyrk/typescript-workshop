@@ -9,23 +9,23 @@
 
 
 
-
 /*
  * ======================================================
- * Don't touch this
+ * Don't touch this (do use it, though)
  * ======================================================*/
 type OnClick<Element, ReturnType = void> = (event: React.MouseEvent<Element, MouseEvent>) => ReturnType;
 
 
 
-/* 01
+/* 1.
  * ======================================================
  * TODO:
- * 1. Replace propTypes with TypeScript
- * 2. Replace 'onClick' with the 'OnClick' type provided above
+ * 1. Replace propTypes with TypeScript.
+ * 2. Replace 'onClick' with the 'OnClick' type provided above.
  *
- * Tip: Look into typing for React.FC<>
+ * Tip: Look into typing for React.FC<>.
  * ======================================================*/
+
 import React from 'react';
 import PT from 'prop-types';
 import styled, { css } from '../../services/styled-components';
@@ -47,10 +47,16 @@ Exercise07.propTypes = {
   onClick: PT.func,
 };
 
-/* 02
+
+
+/* 2.
  * ======================================================
- * TODO: Type this styled-component
+ * TODO:
+ * - Type this styled-component.
+ *
+ * Tip: Use generics.
  * ======================================================*/
+
 export const ContainerEl = styled.div`
   width: 100%;
   height: 300px;
@@ -63,3 +69,12 @@ export const ContainerEl = styled.div`
 ContainerEl.propTypes = {
   image: PT.string,
 };
+
+/* FUN FACTS
+   * ======================================================
+   * 1. We use an "augmented" version of styled-components that includes the type of our theme.
+   *    You can ALT/CMD + CLICK on the styled-components import on line 31 to see how this is done.
+   *
+   * 2. When you write "props.theme" in the styled component above you will see all the properties in
+   *    the theme. (if the options do not show automatically, you can show it with CTRL + SPACE)
+   * ======================================================*/

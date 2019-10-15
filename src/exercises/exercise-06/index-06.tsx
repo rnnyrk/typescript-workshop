@@ -9,16 +9,16 @@
 
 
 
-
-/* 01
+/* 1.
  * ======================================================
- * TODO: This is an example from our Redux setup
+ * This is an example from our Redux setup
  *
- * 1. Add the possibility of a "parameter" to 'BaseState'
- * 1. Pass UserState and PostState as parameter to BaseState
- * 2. Overwrite data type inside BaseState with the passed state
+ * TODO:
+ * 1. Add the possibility of a "parameter" to 'BaseState'.
+ * 2. Pass 'UserState' and 'PostState' as parameter to 'BaseState'.
+ * 3. Use the "parameter" type as type for 'data' in 'BaseState'.
  *
- * Tip: Look into TypeScript generics
+ * Tip: Look into TypeScript generics.
  * ======================================================*/
 
 export type BaseState = {
@@ -62,10 +62,12 @@ export function exercise0601() {
 
 
 
-/* 02
+/* 2.
  * ======================================================
- * TODO: Extend ComponentProps with RouterProps
+ * TODO:
+ * - Extend 'ComponentProps' with 'RouterProps'.
  * ======================================================*/
+
 export type RouterProps = {
   history: {
     push: (route: string) => void;
