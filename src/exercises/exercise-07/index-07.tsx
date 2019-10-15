@@ -1,5 +1,17 @@
 /*
  * ======================================================
+ * Exercise 7
+ * Typing React and styled-components
+ *
+ * TO RUN TEST
+ * npm run test-7
+ * ======================================================*/
+
+
+
+
+/*
+ * ======================================================
  * Don't touch this
  * ======================================================*/
 type OnClick<Element, ReturnType = void> = (event: React.MouseEvent<Element, MouseEvent>) => ReturnType;

@@ -1,7 +1,19 @@
+/*
+  * ======================================================
+  * Exercise 4
+  * Reading errors
+  *
+  * TO RUN TEST
+  * npm run test-4
+  * ======================================================*/
+
+
+
 function exercise04(isUuid: boolean) {
   /* 01
   * ======================================================
-  * TODO: Fix the typing error by adjusting type ID
+  * TODO:
+  * - Fix the typing error by adjusting type ID
   * ======================================================*/
   type ID = number;
 
@@ -11,7 +23,8 @@ function exercise04(isUuid: boolean) {
 
   /* 02
   * ======================================================
-  * TODO: Fix the typing error by adjusting type CompanyProps
+  * TODO:
+  * - Fix the typing error by adjusting type CompanyProps
   * ======================================================*/
   type CompanyProps = {
     name: string;
@@ -39,6 +52,8 @@ function exercise04(isUuid: boolean) {
       },
     ],
   };
+
+
 
 
 

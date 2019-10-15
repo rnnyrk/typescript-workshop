@@ -1,3 +1,14 @@
+/*
+ * ======================================================
+ * Exercise 5
+ * Typing functions
+ *
+ * TO RUN TEST
+ * npm run test-5
+ * ======================================================*/
+
+
+
 /* 01
  * ======================================================
  * TODO: Type the parameters and return type of this function

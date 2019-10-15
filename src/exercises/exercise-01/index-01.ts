@@ -1,7 +1,19 @@
+/*
+  * ======================================================
+  * Exercise 1
+  * Adding types to variables
+  *
+  * TO RUN TEST
+  * npm run test-1
+  * ======================================================*/
+
+
+
 function test01() {
   /*
   * ======================================================
-  * TODO: Type these basic variables
+  * TODO:
+  * - Type these basic variables
   * - Add type AND value
   * ======================================================*/
 

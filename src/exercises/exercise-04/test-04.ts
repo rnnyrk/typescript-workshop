@@ -1,5 +1,5 @@
 import { assert, IsExact } from "conditional-type-checks";
-import exercise04 from './solution-04';
+import exercise04 from './index-04';
 
 const { company, id } = exercise04;
 

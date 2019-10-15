@@ -1,17 +1,33 @@
 /*
  * ======================================================
- * TODO:
- * 1. Extend your own props with RouteComponentProps
- * 2. Set the default value of SmallText color to black
- * 3. Set the types for useState() and openDishModal()
- * 4. Set HTML type for useRef() and fix null error in useEffect()
+ * Exercise 8
+ * Extending prop types and typing hooks
+ *
+ * THIS DOES NOT NEED A TEST TO RUN
  * ======================================================*/
+
+
+
+
+/*
+ * ======================================================
+ * TODO:
+ * 1. Extend the component's props type with RouteComponentProps
+ * 2. Set the default value of SmallText color to black
+ * 3. Set the types for useState() and openDishModal() using generics
+ * 4. Set HTML type for useRef()
+ * 5. Fix null error in useEffect()
+ * ======================================================*/
+
 import React, { useEffect, useState, useRef } from 'react';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
 import styled from 'styled-components';
 
-import bodyScrollLock from 'services/bodyScrollLock';
+import bodyScrollLock from './bodyScrollLock';
 
+
+
+// 2. Set the default value of SmallText color to black
 const Modal = styled.div`
   position: absolute;
   width: 500px;
@@ -36,11 +52,16 @@ type SmallTextProps = {
   color?: 'black' | 'prime';
 }
 
+
+
 const Exercise08: React.FC<Exercise08Props> = ({ dishes, history }) => {
+  // 3. Set the types for useState() and openDishModal() using generics
   const [currentDish, setCurrentDish] = useState();
   const [open, setOpen] = useState(false);
+  // 4. Set HTML type for useRef() using generics
   const modalRef = useRef(null);
 
+  // 5. Fix null error in useEffect()
   useEffect(() => {
     bodyScrollLock(modalRef.current);
   }, [open]);
@@ -77,6 +98,7 @@ type DishProps = {
   title: string;
 };
 
+// 1. Extend the component's props type with RouteComponentProps
 type Exercise08Props = {
   dishes: DishProps[];
 };
