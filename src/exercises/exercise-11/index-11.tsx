@@ -51,6 +51,14 @@ export const getUser = (id) => (dispatch, getState, api) => {
     });
 };
 
+/* FUN FACT
+ * ======================================================
+ * With the BaseThunkAction, the "second function" of a thunk is always typed.
+ * You can hover over the 3 parameters to see their types.
+ *
+ * For example, you can look into the entire state with 'getState().' and see all options of our
+ * API Helper with 'api.'
+ * ======================================================*/
 
 
 

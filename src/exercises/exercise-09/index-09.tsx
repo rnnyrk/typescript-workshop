@@ -64,3 +64,15 @@ function exercise09() {
 };
 
 export default exercise09();
+
+
+
+
+
+
+
+/* BONUS
+ * ======================================================
+ * Try to find a way (Google is allowed) to make it so you never have to type the callback function
+ * of 'useSelector' with 'ReduxState' ever again.
+ * ======================================================*/

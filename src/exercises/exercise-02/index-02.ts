@@ -11,11 +11,11 @@
 
 function Test02() {
   /*
-  * ======================================================
-  * TODO:
-  * 1. Extract the type we added to 'company' to a type variable.
-  * 2. Add the created type and the correct value to 'solution'.
-  * ======================================================*/
+   * ======================================================
+   * TODO:
+   * 1. Extract the type we added to 'company' to a type variable.
+   * 2. Add the created type and the correct value to 'solution'.
+   * ======================================================*/
 
   const company: { name: string } = { name: 'Label A' };
 
@@ -27,9 +27,9 @@ function Test02() {
 
 
   /*
-  * ======================================================
-  * Do not touch this
-  * ======================================================*/
+   * ======================================================
+   * Do not touch this
+   * ======================================================*/
   return { company, solution };
 };
 

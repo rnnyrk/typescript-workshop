@@ -1,18 +1,19 @@
 /*
-  * ======================================================
-  * Exercise 4
-  * Reading errors
-  *
-  * TO RUN TEST
-  * npm run test-4
-  * ======================================================*/
+ * ======================================================
+ * Exercise 4
+ * Reading errors
+ *
+ * TO RUN TEST
+ * npm run test-4
+ * ======================================================*/
 
 
 
 /* 1.
  * ======================================================
  * TODO:
- * - Fix the typing error by fixing the 'ID' type.
+ * 1. Mouse over the error to see what is going wrong.
+ * 2. Fix the typing error by fixing the 'ID' type.
  * ======================================================*/
 
 function exercise04(isUuid: boolean) {

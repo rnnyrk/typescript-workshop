@@ -79,7 +79,12 @@ function test01() {
   // string OR number
   let o;
 
-
+  /* FUN FACT
+   * ======================================================
+   * TypeScript is (usually) pretty smart, and knows the types of variables based on the value
+   * you give it. You can hover over the variables and see what type TypeScript has infered from
+   * the value you have given it.
+   * ======================================================*/
 
 
 
@@ -87,9 +92,9 @@ function test01() {
 
 
   /*
-  * ======================================================
-  * Do not touch this
-  * ======================================================*/
+   * ======================================================
+   * Do not touch this
+   * ======================================================*/
   return { a, b, c, d, e, f, g, h, i, j, k, l, m, n, o };
 };
 

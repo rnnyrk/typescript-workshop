@@ -69,3 +69,12 @@ export const ContainerEl = styled.div`
 ContainerEl.propTypes = {
   image: PT.string,
 };
+
+/* FUN FACTS
+   * ======================================================
+   * 1. We use an "augmented" version of styled-components that includes the type of our theme.
+   *    You can ALT/CMD + CLICK on the styled-components import on line 31 to see how this is done.
+   *
+   * 2. When you write "props.theme" in the styled component above you will see all the properties in
+   *    the theme. (if the options do not show automatically, you can show it with CTRL + SPACE)
+   * ======================================================*/
