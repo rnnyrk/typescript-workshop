@@ -1,6 +1,74 @@
-// Ignore this first part (helper functions)
+/*
+ * ======================================================
+ * Exercise 11
+ * Typing Redux thunks
+ *
+ * TO RUN TEST
+ * npm run test-11
+ * ======================================================*/
+
+
+/*
+ * ======================================================
+ * TODO:
+ * 1. Create a function type for 'getUser'.
+ * HINT: Ignore the (dispatch, getState, api) part for this type.
+ *
+ * 2. Add the type you created as the 'BaseThunkAction' generic type.
+ * 3. Type 'getUser' with the 'GetUserAction' type.
+ *
+ * 4. Dispatch success function from userActions.
+ * 5. Dispatch failed function from userActions.
+ *
+ * 6. BONUS: With generics, make it so 'api.get' knows what it will resolve.
+ * ======================================================*/
+
+ // Do not touch this
+ const userActions = {
+  getUser: () => action('user/GET'),
+  getUserSuccess: (payload: UserData) => action('user/GET_SUCCESS', payload),
+  getUserFailed: (error: string) => action('user/GET_FAILED', error),
+};
+
+// 1. Create a type for 'getUser' as the function you would use in a React component
+
+// 2. Add this type as the 'BaseThunkAction' generic type
+export type GetUserAction = BaseThunkAction<>;
+
+// 3. Type 'getUser' with the 'GetUserAction' type
+export const getUser = (id) => (dispatch, getState, api) => {
+  // 6. BONUS: With generics, make it so 'api.get' knows what it will resolve
+  return api.get({ path: `api/user/${id}` })
+    .then((user) => {
+      // 4. Dispatch success function from userActions
+      return user;
+    })
+    .catch((err) => {
+      // 5. Dispatch failed function from userActions
+      return err;
+    });
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * ======================================================
+ * Do not touch this
+ * ======================================================*/
 import { ThunkAction as IThunkAction } from 'redux-thunk';
-import { action, ActionType } from 'typesafe-actions';
+import { action } from 'typesafe-actions';
+import { api } from './api';
 
 type Action<P = any> = {
   type: string;
@@ -16,37 +84,10 @@ type ReduxState = {
 // React components only care about the "first function" of a thunk
 // Redux uses the "second function" of a thunk
 // We created a helper type so that you will never have to type the "second function"
-type ThunkAction<ReturnType = void> = IThunkAction<ReturnType, ReduxState, {}, Action>;
+type ThunkAction<ReturnType = void> = IThunkAction<ReturnType, ReduxState, typeof api, Action>;
 type BaseThunkAction<Fn extends (...args: any) => any> = (...args: Parameters<Fn>) => ThunkAction<Promise<ReturnType<Fn>>>;
 
-const userActions = {
-  getUser: () => action('user/GET'),
-  getUserSuccess: (payload: string) => action('user/GET_SUCCESS', payload),
-  getUserFailed: (error: string) => action('user/GET_FAILED', error),
-};
-
-/*
-* ======================================================
-* TODO: Above are some helper functions, you can try to
-* understand how those work, or ignore and just use them
-*
-* 1. Type the "first function", with id parameter, and
-     return type on the BaseThunkAction helper
-     (Tip: We've typed this function before)
-  2. Dispatch the error and success functions from userActions
-* ======================================================*/
-
-type GetUserAction = BaseThunkAction<>;
-
-export const getUser = (id) => (dispatch, getState, api) => {
-  return fetch(`api/user/${id}`)
-    .then((res) => res.json())
-    .then((user) => {
-
-      return user;
-    })
-    .catch((err) => {
-
-      return err;
-    });
-};
+type UserData = {
+  id: string;
+  name: string;
+}
