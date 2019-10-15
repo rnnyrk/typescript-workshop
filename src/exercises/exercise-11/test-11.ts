@@ -2,7 +2,7 @@
 import { ThunkAction as IThunkAction } from 'redux-thunk';
 import { assert, IsExact } from "conditional-type-checks";
 import { api } from './api';
-import { GetUserAction, getUser } from './solution-11';
+import { GetUserAction, getUser } from './index-11';
 
 type Action<P = any> = {
   type: string;
