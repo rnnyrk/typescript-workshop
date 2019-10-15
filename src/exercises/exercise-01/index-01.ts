@@ -26,7 +26,7 @@ function test01() {
   // boolean
   let c;
 
-  // Array of string
+  // Array of strings
   let d;
 
   // Object with property 'name' and value of type string
@@ -48,7 +48,7 @@ function test01() {
   // Function that returns void
   let h;
 
-  // Function with a single parameter of type number
+  // Function with a parameter id of type number
   // Returns number
   let i;
 
@@ -56,7 +56,7 @@ function test01() {
 
   /*
   * ======================================================
-  * Type inference
+  * Type inference (automatic type assigning)
   * TODO: Add the correct values to the variables
   * - Do NOT add types
   * ======================================================*/
