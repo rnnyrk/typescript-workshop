@@ -9,12 +9,14 @@
   },
   "license": "MIT",
   "scripts": {
-    "tsc": "tsc",
-    "test-1": "tsc -p src/exercises/exercise-01/tsconfig.json --watch",
-    "test-2": "tsc -p src/exercises/exercise-02/tsconfig.json --watch",
-    "test-3": "tsc -p src/exercises/exercise-03/tsconfig.json --watch",
-    "test-5": "tsc -p src/exercises/exercise-05/tsconfig.json --watch",
-    "test-7": "tsc -p src/exercises/exercise-07/tsconfig.json --watch"
+    "test": "tsc --watch",
+    "test-1": "npm run test -- -p src/exercises/exercise-01/tsconfig.json",
+    "test-2": "npm run test -- -p src/exercises/exercise-02/tsconfig.json",
+    "test-3": "npm run test -- -p src/exercises/exercise-03/tsconfig.json",
+    "test-4": "npm run test -- -p src/exercises/exercise-04/tsconfig.json",
+    "test-5": "npm run test -- -p src/exercises/exercise-05/tsconfig.json",
+    "test-6": "npm run test -- -p src/exercises/exercise-06/tsconfig.json",
+    "test-7": "npm run test -- -p src/exercises/exercise-07/tsconfig.json"
   },
   "keywords": [],
   "browserslist": {
