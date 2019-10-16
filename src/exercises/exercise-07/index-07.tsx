@@ -21,7 +21,8 @@ type OnClick<Element, ReturnType = void> = (event: React.MouseEvent<Element, Mou
  * ======================================================
  * TODO:
  * 1. Replace propTypes with TypeScript.
- * 2. Replace 'onClick' with the 'OnClick' type provided above.
+ * 2. Replace 'onClick' with the 'OnClick' type provided above and pass the correct HTMLElement type.
+ * HINT: You can find the HTMLElement type by hovering over the <button> on line 37.
  *
  * Tip: Look into typing for React.FC<>.
  * ======================================================*/
