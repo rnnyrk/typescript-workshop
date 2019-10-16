@@ -45,10 +45,10 @@ const initalState: UserState = {
 export const userActions = {
   getUser: () => action('user/GET'),
 
-  // 'user/GET_SUCCESS' with payload
+  // 'user/GET_SUCCESS' with payload + correct type
   getUserSuccess: () => {},
 
-  // 'user/GET_FAILED' with error
+  // 'user/GET_FAILED' with error + correct type
   getUserFailed: () => {},
 };
 
