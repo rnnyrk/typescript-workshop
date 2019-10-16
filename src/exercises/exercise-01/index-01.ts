@@ -3,6 +3,8 @@
  * Exercise 1
  * Adding types to variables
  *
+ * https://www.typescriptlang.org/docs/handbook/basic-types.html#table-of-contents
+ *
  * TO RUN TEST
  * npm run test-1
  * ======================================================*/
@@ -26,7 +28,8 @@ function test01() {
   // boolean
   let c;
 
-  // Array of strings
+  // Array of strings (Use the [] syntax)
+  // https://www.typescriptlang.org/docs/handbook/basic-types.html#array
   let d;
 
   // Object with property 'name' and value of type string
