@@ -32,13 +32,13 @@
   getUserFailed: (error: string) => action('user/GET_FAILED', error),
 };
 
-// 1. Create a type for 'getUser' as the function you would use in a React component
+// 1. Add typing for 'getUser' parameters and return type in GetUserAction
 
 // 2. Add this type as the 'BaseThunkAction' generic type
-export type GetUserAction = BaseThunkAction<>;
+export type GetUserAction = BaseThunkAction<(id: number) => UserData | string>;
 
 // 3. Type 'getUser' with the 'GetUserAction' type
-export const getUser = (id) => (dispatch, getState, api) => {
+export const getUser: GetUserAction = (id) => (dispatch, getState, api) => {
   // 6. BONUS: With generics, make it so 'api.get' knows what it will resolve
   return api.get({ path: `api/user/${id}` })
     .then((user) => {
