@@ -35,10 +35,10 @@
 // 1. Add typing for 'getUser' parameters and return type in GetUserAction
 
 // 2. Add this type as the 'BaseThunkAction' generic type
-export type GetUserAction = BaseThunkAction<(id: number) => UserData | string>;
+export type GetUserAction = BaseThunkAction<>;
 
 // 3. Type 'getUser' with the 'GetUserAction' type
-export const getUser: GetUserAction = (id) => (dispatch, getState, api) => {
+export const getUser = (id) => (dispatch, getState, api) => {
   // 6. BONUS: With generics, make it so 'api.get' knows what it will resolve
   return api.get({ path: `api/user/${id}` })
     .then((user) => {
