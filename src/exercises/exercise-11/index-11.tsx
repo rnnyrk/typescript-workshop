@@ -11,16 +11,15 @@
 /*
  * ======================================================
  * TODO:
- * 1. Create a function type for 'getUser'.
- * HINT: Ignore the (dispatch, getState, api) part for this type.
+ * 1. Add typing for the "first function" of 'getUser' and add this as generic to 'BaseThunkAction'.
+ * HINT: Ignore the (dispatch, getState, api) part of this function.
  *
- * 2. Add the type you created as the 'BaseThunkAction' generic type.
- * 3. Type 'getUser' with the 'GetUserAction' type.
+ * 2. Type 'getUser' with the 'GetUserAction' type.
  *
- * 4. Dispatch success function from userActions.
- * 5. Dispatch failed function from userActions.
+ * 3. Dispatch success function from userActions.
+ * 4. Dispatch failed function from userActions.
  *
- * 6. BONUS: With generics, make it so 'api.get' knows what it will resolve.
+ * 5. BONUS: With generics, make it so 'api.get' knows what it will resolve.
  * ======================================================*/
 
 
@@ -32,21 +31,19 @@
   getUserFailed: (error: string) => action('user/GET_FAILED', error),
 };
 
-// 1. Add typing for 'getUser' parameters and return type in GetUserAction
-
-// 2. Add this type as the 'BaseThunkAction' generic type
+// 1. Add typing for the "first function" of 'getUser' and add this as generic to 'BaseThunkAction'.
 export type GetUserAction = BaseThunkAction<>;
 
-// 3. Type 'getUser' with the 'GetUserAction' type
+// 2. Type 'getUser' with the 'GetUserAction' type
 export const getUser = (id) => (dispatch, getState, api) => {
-  // 6. BONUS: With generics, make it so 'api.get' knows what it will resolve
+  // 5. BONUS: With generics, make it so 'api.get' knows what it will resolve
   return api.get({ path: `api/user/${id}` })
     .then((user) => {
-      // 4. Dispatch success function from userActions
+      // 3. Dispatch success function from userActions
       return user;
     })
     .catch((err) => {
-      // 5. Dispatch failed function from userActions
+      // 4. Dispatch failed function from userActions
       return err;
     });
 };
