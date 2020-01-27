@@ -9,27 +9,21 @@
 
 
 
-/* 1.
+/* 01. Creating a type object
  * ======================================================
  * TODO:
- * 1. Type the 'person' object from exercise0301.
- * 2. Add type to 'person' in exercise0301.
+ * 1. Type the 'Person' object
+ * 2. Add the type to the 'person' const
  * ======================================================*/
 
 export type Person = {};
 
-
 export function exercise0301() {
-  /* 01
-   * ======================================================
-   * TODO: Type the person object
-   * ======================================================*/
-
   const person = {
-    name: 'Typescript fanboy',
+    name: 'TypeScript fanboy',
     age: 25,
     city: 'Amsterdam',
-    interests: ['React', 'Styled Components', 'React Native'],
+    interests: ['React', 'Styled Components', 'React Native', 'ES6'],
   };
 
 
@@ -47,16 +41,15 @@ export function exercise0301() {
 
 
 
-/* 2.
+/* 02. Re-using types
  * ======================================================
  * TODO:
- * 1. Type the 'company' object in exercise0302.
- * 2. Reuse the 'person' type from exercise0301.
- * 3. Add type to 'company' in exercise0302.
+ * 1. Type the 'Company' object
+ * 2. Reuse the 'Person' type within the new 'Company' type
+ * 3. Add type to the 'company' const
  * ======================================================*/
 
 export type Company = {};
-
 
 export function exercise0302() {
   const company = {
