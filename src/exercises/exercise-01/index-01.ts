@@ -61,7 +61,8 @@ function test01() {
   /* Type Inference (automatic type assigning)
    * ======================================================
    * TODO:
-   * - Add the correct value to these variables (without types).
+   * - Add the correct value to these variables (without types)
+   * - Hover over the variable to see the automically assigned type
    * ======================================================*/
 
   // number
@@ -82,14 +83,13 @@ function test01() {
   // string OR number
   let o;
 
+
   /* FUN FACT
    * ======================================================
    * TypeScript is (usually) pretty smart, and knows the types of variables based on the value
    * you give it. You can hover over the variables and see what type TypeScript has infered from
    * the value you have given it.
    * ======================================================*/
-
-
 
 
 
