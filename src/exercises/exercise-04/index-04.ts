@@ -8,41 +8,42 @@
  * ======================================================*/
 
 
-
-/* 1.
- * ======================================================
- * TODO:
- * 1. Mouse over the error to see what is going wrong.
- * 2. Fix the typing error by fixing the 'ID' type.
- * ======================================================*/
-
 function exercise04(isUuid: boolean) {
+  /* 01. Reading a basic error
+  * ======================================================
+  * TODO:
+  * 1. Mouse over the error to see what is going wrong
+  * 2. Fix the typing error by fixing the 'ID' type
+  * ======================================================*/
   type ID = number;
 
   let id: ID = isUuid ? 'a3b21' : 1;
 
 
 
-  /* 2.
+  /* 02. Fix type errors
    * ======================================================
    * TODO:
-   * - Fix the typing error by fixing the 'CompanyProps' type.
+   * - Fix the typing error by changing the 'CompanyProps' type
+   * (do not change the value of the company const)
    * ======================================================*/
+  type Employee = {
+    name: string;
+    age: number;
+    city: string;
+    interests: string[];
+  };
+
   type CompanyProps = {
     name: string;
-    employees: {
-      name: string;
-      age: number;
-      city: string;
-      interests: string[];
-    }[];
+    employees: Employee[];
   }
 
   const company: CompanyProps = {
     name: 'Label A',
     employees: [
       {
-        name: 'Sander Vispoel',
+        name: 'Jorn Bostelaar',
         age: 25,
         city: 'Utrecht',
       },
