@@ -56,9 +56,9 @@ export function exercise0302() {
     name: 'Label A',
     employees: [
       {
-        name: 'Sander Vispoel',
-        age: 25,
-        city: 'Utrecht',
+        name: 'Jorn Bostelaar',
+        age: 27,
+        city: 'Amsterdam',
         interests: ['SSR', 'React'],
       },
       {
