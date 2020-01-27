@@ -12,7 +12,8 @@
 
 
 function test01() {
-  /* 1. Basic types
+
+  /* 01. Basic types
    * ======================================================
    * TODO:
    * 1. Type all the variables with the the correct type (stated above the variables).
@@ -40,7 +41,7 @@ function test01() {
 
 
 
-  /* 2. Advanced types
+  /* 02. Advanced types
   * ======================================================
   * TODO:
   * - Type all the variables
@@ -58,7 +59,7 @@ function test01() {
 
 
 
-  /* Type Inference (automatic type assigning)
+  /* 03. Type Inference (automatic type assigning)
    * ======================================================
    * TODO:
    * - Add the correct value to these variables (without types)
