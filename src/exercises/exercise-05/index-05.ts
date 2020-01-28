@@ -9,7 +9,7 @@
 
 
 
-/* 1.
+/* 01.
  * ======================================================
  * TODO:
  * - Type the parameters and return type of this function
@@ -22,10 +22,12 @@ const Exercise0501 = (multiply) => {
 
 
 
-/* 2.
+/* 02.
  * ======================================================
  * TODO:
- * - Return an object based on the parameters and const
+ * - Type the return object and parameters
+ * - Use seperate type variables
+ * - Explicitly type 'office' and 'developerType' by the possible values
  * ======================================================*/
 
 const Exercise0502 = ({ firstName, lastName, age, city, interests }) => {

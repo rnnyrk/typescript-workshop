@@ -2,12 +2,10 @@
  * ======================================================
  * TODO: Type the parameters and return type of this function
  * ======================================================*/
-const Exercise0501 = (multiply: number): ReturnType => {
+const Exercise0501 = (multiply: number): number => {
   const count: number = 2;
   return count * multiply;
 };
-
-type ReturnType = number;
 
 /* 02
  * ======================================================
