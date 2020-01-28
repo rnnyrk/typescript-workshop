@@ -1,7 +1,7 @@
 /*
  * ======================================================
  * Exercise 6
- * Adding generics to types
+ * Abstracting types
  *
  * TO RUN TEST
  * npm run test-6
@@ -9,16 +9,15 @@
 
 
 
-/* 1.
+/* 01.
  * ======================================================
- * This is an example from our Redux setup
- *
  * TODO:
- * 1. Add the possibility of a "parameter" to 'BaseState'.
- * 2. Pass 'UserState' and 'PostState' as parameter to 'BaseState'.
- * 3. Use the "parameter" type as type for 'data' in 'BaseState'.
+ * 1. Add the option for a "parameter" to 'BaseState'
+ * 2. Pass 'UserState' and 'PostState' as "parameter" to 'BaseState'
+ * 3. Use the passed "parameter" on 'BaseState' as a type for 'data' in 'BaseState'
  *
- * Tip: Look into TypeScript generics.
+ * Tip: TypeScript generics
+ * https://medium.com/@rossbulat/typescript-generics-explained-15c6493b510f
  * ======================================================*/
 
 export type BaseState = {
@@ -50,10 +49,10 @@ export function exercise0601() {
   };
 
 
-
-
-
-  /*
+  /* Scroll down for the next exercise
+   *
+   *
+   *
    * ======================================================
    * Do not touch this
    * ======================================================*/
@@ -62,7 +61,7 @@ export function exercise0601() {
 
 
 
-/* 2.
+/* 02.
  * ======================================================
  * TODO:
  * - Extend 'ComponentProps' with 'RouterProps'.
