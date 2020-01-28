@@ -16,7 +16,7 @@ Every test has an `index-X.ts`, `solution-X.ts` and `test-X.ts`. Only open the t
 3. Creating and reusing types
 4. Reading errors
 5. Typing functions
-6. Adding generics to types
+6. Abstracting types
 7. Typing React and styled-components
 8. Extending prop types and typing hooks
 
