@@ -19,7 +19,6 @@ Every test has an `index-X.ts`, `solution-X.ts` and `test-X.ts`. Only open the t
 6. Abstracting types
 7. Replace propTypes and type CSS-in-JS
 8. Extending prop types and typing hooks
-9. Typing Redux
 
 ## TypeScript Recources
 * [How to think and type in TypeScript](https://areknawo.com/how-to-think-and-type-in-typescript/)

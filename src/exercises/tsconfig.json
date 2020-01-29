@@ -13,10 +13,6 @@
     "jsx": "react",
     "typeRoots": ["node_modules/@types"],
     "lib": ["dom", "es2017"],
-    "baseUrl": ".",
-    "paths": {
-      "types": ["src/types/index"],
-      "styled-components": ["src/services/styled-components"]
-    },
+    "baseUrl": "."
   }
 }
