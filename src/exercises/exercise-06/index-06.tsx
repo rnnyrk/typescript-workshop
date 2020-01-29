@@ -65,6 +65,7 @@ export function exercise0601() {
  * ======================================================
  * TODO:
  * - Extend 'ComponentProps' with 'RouterProps'.
+ * - Do not change the 'navigateTo' function with this exercise
  * ======================================================*/
 
 export type RouterProps = {
@@ -81,8 +82,7 @@ export type ComponentProps = {
 }
 
 export function exercise0602() {
-  // Don't change the function
-  const extendFunction = (props: ComponentProps) => {
+  const navigateTo = (props: ComponentProps) => {
     props.history.push(props.match.id);
   };
 
@@ -95,5 +95,5 @@ export function exercise0602() {
   * ======================================================
   * Do not touch this
   * ======================================================*/
- return { extendFunction };
+  return { navigateTo };
 };

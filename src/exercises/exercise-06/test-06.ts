@@ -40,12 +40,12 @@ assert<IsExact<RouterProps, Test06.exercise02.RouterProps>>(true);
 // Check if componentprops is extended with routerprops
 assert<IsExact<ComponentProps, Test06.exercise02.ComponentProps>>(true);
 
-// Check if extendFunction param type is correct
-const {extendFunction} = exercise0602();
-type ExtendFunctionParams = Parameters<typeof extendFunction>;
-type ExtendFunctionPropsParam = ExtendFunctionParams[0];
+// Check if navigateTo param type is correct
+const {navigateTo} = exercise0602();
+type NavigateToParams = Parameters<typeof navigateTo>;
+type NavigateToPropsParam = NavigateToParams[0];
 
-assert<IsExact<ExtendFunctionPropsParam, Test06.exercise02.ExtendFunctionPropsParam>>(true);
+assert<IsExact<NavigateToPropsParam, Test06.exercise02.NavigateToPropsParam>>(true);
 
 
 
@@ -99,6 +99,6 @@ module Test06 {
       title: string;
     };
 
-    export type ExtendFunctionPropsParam = ComponentProps;
+    export type NavigateToPropsParam = ComponentProps;
   }
 }

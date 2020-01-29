@@ -69,7 +69,7 @@ export type ComponentProps = RouterProps & {
 
 export function exercise0602() {
   // Don't change the function
-  const extendFunction = (props: ComponentProps) => {
+  const navigateTo = (props: ComponentProps) => {
     props.history.push(props.match.id);
   };
 
@@ -83,5 +83,5 @@ export function exercise0602() {
   * ======================================================
   * Do not touch this
   * ======================================================*/
-  return { extendFunction };
+  return { navigateTo };
 };
