@@ -9,7 +9,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
 import styled from 'styled-components';
-
 import bodyScrollLock from './bodyScrollLock';
 
 const Modal = styled.div`
