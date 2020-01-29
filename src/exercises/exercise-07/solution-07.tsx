@@ -6,16 +6,19 @@ type OnClick<Element, ReturnType = void> = (event: React.MouseEvent<Element, Mou
 
 
 
-/* 01
+/* 01.
  * ======================================================
  * TODO:
  * 1. Replace propTypes with TypeScript
  * 2. Replace 'onClick' with the 'OnClick' type provided above
+ *    and pass the correct HTMLElement type
+ *
+ * HINT: You can find the HTMLElement type by hovering over the <button> on line 40
  *
  * Tip: Look into typing for React.FC<>
  * ======================================================*/
 import React from 'react';
-import styled, { css } from '../../services/styled-components';
+import styled, { css } from 'styled-components';
 
 export const Exercise07: React.FC<Exercise07Props> = ({ title, image, onClick }) => (
   <ContainerEl image={image}>
@@ -34,10 +37,14 @@ type Exercise07Props = {
   onClick?: OnClick<HTMLButtonElement>;
 }
 
-/* 02
+/* 02.
  * ======================================================
- * TODO: Type this styled-component
+ * TODO:
+ * - Type this styled-component
+ *
+ * Tip: Use a generic type
  * ======================================================*/
+
 export const ContainerEl = styled.div<ContainerElProps>`
   width: 100%;
   height: 300px;

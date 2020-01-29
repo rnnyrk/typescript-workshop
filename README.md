@@ -17,17 +17,14 @@ Every test has an `index-X.ts`, `solution-X.ts` and `test-X.ts`. Only open the t
 4. Reading errors
 5. Typing functions
 6. Abstracting types
-
-7. Typing React and styled-components
+7. Replace propTypes and type CSS-in-JS
 8. Extending prop types and typing hooks
 9. Typing Redux
-10. Typing ducks
 
 ## TypeScript Recources
 * [How to think and type in TypeScript](https://areknawo.com/how-to-think-and-type-in-typescript/)
 * [Why TypeScript is the best way to write Front-end in 2019](https://medium.com/@jtomaszewski/why-typescript-is-the-best-way-to-write-front-end-in-2019-feb855f9b164)
 * [Deciphering TypeScript’s React errors](https://medium.com/innovation-and-technology/deciphering-typescripts-react-errors-8704cc9ef402)
-* [AirBnB: Adopting Typescript at Scale - Brie Bunge](https://www.youtube.com/watch?v=P-J9Eg7hJwE&feature=youtu.be)
 * [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/)
 
 ## Prime - Label A boilerplates
