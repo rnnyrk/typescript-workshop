@@ -17,9 +17,7 @@
     "test-5": "npm run test -- -p src/exercises/exercise-05/tsconfig.json",
     "test-6": "npm run test -- -p src/exercises/exercise-06/tsconfig.json",
     "test-7": "npm run test -- -p src/exercises/exercise-07/tsconfig.json",
-    "test-9": "npm run test -- -p src/exercises/exercise-09/tsconfig.json",
-    "test-10": "npm run test -- -p src/exercises/exercise-10/tsconfig.json",
-    "test-11": "npm run test -- -p src/exercises/exercise-11/tsconfig.json"
+    "test-9": "npm run test -- -p src/exercises/exercise-09/tsconfig.json"
   },
   "keywords": [
     "typescript",
@@ -31,6 +29,7 @@
     "prop-types": "^15.7.2",
     "react": "16.12.0",
     "react-dom": "16.12.0",
+    "react-router-dom": "5.1.2",
     "styled-components": "5.0.0"
   },
   "devDependencies": {

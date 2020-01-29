@@ -17,7 +17,7 @@ type OnClick<Element, ReturnType = void> = (event: React.MouseEvent<Element, Mou
 
 
 
-/* 1.
+/* 01.
  * ======================================================
  * TODO:
  * 1. Replace propTypes with TypeScript.
@@ -50,7 +50,7 @@ Exercise07.propTypes = {
 
 
 
-/* 2.
+/* 02.
  * ======================================================
  * TODO:
  * - Type this styled-component.

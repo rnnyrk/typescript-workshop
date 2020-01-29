@@ -17,8 +17,11 @@ Every test has an `index-X.ts`, `solution-X.ts` and `test-X.ts`. Only open the t
 4. Reading errors
 5. Typing functions
 6. Abstracting types
+
 7. Typing React and styled-components
 8. Extending prop types and typing hooks
+9. Typing Redux
+10. Typing ducks
 
 ## TypeScript Recources
 * [How to think and type in TypeScript](https://areknawo.com/how-to-think-and-type-in-typescript/)
