@@ -27,14 +27,14 @@ function exercise04(isUuid: boolean) {
     name: 'Label A',
     employees: [
       {
-        name: 'Sander Vispoel',
+        name: 'Jorn Bostelaar',
         age: 25,
-        city: 'Utrecht',
+        city: 'Amsterdam',
       },
       {
-        name: 'Sander Vispoel',
+        name: 'Ronny Rook',
         age: 25,
-        city: 'Utrecht',
+        city: 'Amsterdam',
         interests: ['Styled Components', 'React Native'],
       },
     ],
