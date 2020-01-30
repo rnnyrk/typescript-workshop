@@ -15,6 +15,7 @@ function exercise04(isUuid: boolean) {
   * 1. Mouse over the error to see what is going wrong
   * 2. Fix the typing error by fixing the 'ID' type
   * ======================================================*/
+
   type ID = number;
 
   let id: ID = isUuid ? 'a3b21' : 1;
@@ -25,8 +26,9 @@ function exercise04(isUuid: boolean) {
    * ======================================================
    * TODO:
    * - Fix the typing error by changing the 'CompanyProps' type
-   * (do not change the value of the company const)
+   * (DO NOT change the value of the company const)
    * ======================================================*/
+
   type Employee = {
     name: string;
     age: number;
